@@ -5,7 +5,19 @@ class Pontuacao extends Component {
   constructor(props){
       super(props);
       this.time = "Time da Casa";
+      this.state = {
+        gols: 0
+      };
   }  
+
+  incrementar=()=>{
+    this.setState(
+      {
+        gols: this.state.gols + 1
+      });
+    console.log(this.state);
+  }
+
   render(){
     if(this.props.visitante ==="true"){
       this.time = "Time visitante";
@@ -13,7 +25,8 @@ class Pontuacao extends Component {
     return(
     <div className="pontuacao">
         <h1>{this.props.nomeTime || this.time}</h1>
-        <h2>0</h2>
+        <h2>{this.state.gols}</h2>
+        <button onClick={this.incrementar} className="gol"> Foi Gol! </button>
     </div>
     );
   }

@@ -8,5 +8,16 @@
 }
 
 .pontuacao h1{
+    font-size: 40pt;
+}
+
+.pontuacao h2{
     font-size: 30pt;
+}
+
+.pontuacao .gol{
+    font-size: 20pt;
+    color: red;
+    border-radius: 10px;
+    padding: 15px;
 }
