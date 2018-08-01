@@ -7,3 +7,17 @@
   color: red;
   background-color: #f9f9f9;
 }
+
+.controles{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.controles input, .controles button {
+  margin: 10px;
+}
