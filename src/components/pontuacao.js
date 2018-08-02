@@ -20,7 +20,7 @@ class Pontuacao extends Component {
     <div className="pontuacao">
         <h1>{this.props.nomeTime || this.time}</h1>
         <h2>{this.props.gols}</h2>
-        <button onClick= {this.props.cliqueBotao} className="gol"> Foi Gol! </button>
+        <button onClick= {this.atualizar} className="gol"> Foi Gol! </button>
     </div>
     );
   }
